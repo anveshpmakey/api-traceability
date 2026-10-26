@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: order-service
+clients:
+  payment:
+    url: http://payment-service:8083
+  customer:
+    base-url: http://customer-service/api/customers
+kafka:
+  topics:
+    order-events: order-events
